@@ -209,7 +209,7 @@ li:not(:first-child) {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    background: url("/wedding/back1.png") 1px 12px / 10% no-repeat, url("/wedding/back0.png") 176px 52px / 11% no-repeat, white;
+                    background: url("back1.png") 1px 12px / 10% no-repeat, url("back0.png") 176px 52px / 11% no-repeat, white;
                     box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.17), inset 5px 5px 10px rgba(220, 120, 0, 0.24), inset -5px 5px 10px rgba(220, 120, 0, 0.24);
 
                     .paper-border-top {
@@ -244,7 +244,7 @@ li:not(:first-child) {
                     transform: rotateX(-180deg);
                     display: flex;
                     flex-direction: column;
-                    background: url("/wedding/back1.png") 1px 82px / 10% no-repeat, url("/wedding/back0.png") 176px 142px / 11% no-repeat, white;
+                    background: url("back1.png") 1px 82px / 10% no-repeat, url("back0.png") 176px 142px / 11% no-repeat, white;
                     box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.17), inset 5px -5px 10px rgba(220, 120, 0, 0.24), inset -5px -5px 10px rgba(220, 120, 0, 0.24);
 
                     .paper-border-bottom {
@@ -272,7 +272,7 @@ li:not(:first-child) {
                 backface-visibility: hidden;
                 display: flex;
                 flex-direction: column;
-                background: url("/wedding/back1.png") 1px 12px / 10% no-repeat, url("/wedding/back0.png") 176px 52px / 11% no-repeat, white;
+                background: url("back1.png") 1px 12px / 10% no-repeat, url("back0.png") 176px 52px / 11% no-repeat, white;
                 box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.17), inset 5px 5px 10px rgba(220, 120, 0, 0.24), inset -5px -5px 10px rgba(220, 120, 0, 0.24);
 
                 .paper-border {
@@ -301,7 +301,7 @@ li:not(:first-child) {
 
 .letter-image.open {
     .envelope {
-        transform: translate(-100px, 75px) scale(2);
+        transform: translate(-50px, 50px) scale(1.5);
         transition: transform 1s ease-in-out .5s;
 
         .folds {
@@ -323,7 +323,7 @@ li:not(:first-child) {
 
 .letter-image.open.touch {
     .envelope {
-        transform: translate(-200px, 150px) scale(3);
+        transform: translate(-100px, 75px) scale(2);
         transition: transform .5s ease-in-out;
 
         .paper {
@@ -335,7 +335,7 @@ li:not(:first-child) {
 
 .letter-image.open.touch.take {
     .envelope {
-        transform: translate(-200px, 200px) scale(3);
+        transform: translate(-100px, 100px) scale(2);
         transition: transform .5s ease-in-out;
 
         .paper {

@@ -10,6 +10,10 @@ const onClick = () => {
         element.classList.add('expand')
     } else if (!element.classList.contains('rotate')) {
         element.classList.add('rotate')
+    } else if (!element.classList.contains('back')) {
+        element.classList.add('back')
+    } else if (element.classList.contains('back')) {
+        element.classList.remove('back')
     }
 }
 
