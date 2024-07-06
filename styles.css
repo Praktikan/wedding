@@ -1,7 +1,7 @@
 body {
     font-size: 4px;
     background: #323641;
-    color: #cb5a5e;
+    color: #4b0707;
     overflow: hidden;
 }
 
@@ -209,7 +209,7 @@ li:not(:first-child) {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    background: url("back1.png") 1px 12px / 10% no-repeat, url("back0.png") 176px 52px / 11% no-repeat, white;
+                    background: url("back1.png") 1px 12px / 10% no-repeat, url("back0.png") 173px 31px / 11% no-repeat, white;
                     box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.17), inset 5px 5px 10px rgba(220, 120, 0, 0.24), inset -5px 5px 10px rgba(220, 120, 0, 0.24);
 
                     .paper-border-top {
@@ -226,8 +226,9 @@ li:not(:first-child) {
                                 text-align: center;
 
                                 .title-text {
-                                    font-size: 10px;
+                                    font-size: 5px;
                                     line-height: 10px;
+                                    font-weight: bold;
                                 }
                             }
                         }
@@ -244,7 +245,7 @@ li:not(:first-child) {
                     transform: rotateX(-180deg);
                     display: flex;
                     flex-direction: column;
-                    background: url("back1.png") 1px 82px / 10% no-repeat, url("back0.png") 176px 142px / 11% no-repeat, white;
+                    background: url("heart1.png") 137px 34px / 24% no-repeat, white;
                     box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.17), inset 5px -5px 10px rgba(220, 120, 0, 0.24), inset -5px -5px 10px rgba(220, 120, 0, 0.24);
 
                     .paper-border-bottom {
@@ -287,13 +288,36 @@ li:not(:first-child) {
                 }
             }
 
-            .main-text-block {
-                margin-top:15px;
+            .center-text-block {
+                margin-top: 15px;
+                text-indent: 12px;
 
                 .main-text {
-                    font-size: 8px;
-                    line-height: 8px;
+                    font-size: 5px;
+                    line-height: 10px;
                 }
+            }
+
+
+            .main-text-block {
+                margin-top: 8px;
+                text-indent: 12px;
+
+                .main-text {
+                    font-size: 5px;
+                    line-height: 10px;
+                }
+            }
+
+            .names {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                right: 25px;
+                line-height: 6px;
+                bottom: 22px;
+                font-size: 5px;
             }
         }
     }
@@ -382,6 +406,26 @@ li:not(:first-child) {
             .paper-front {
                 transform: rotateY(180deg);
                 opacity: 0;
+                transition: transform 1s ease-in-out, opacity 0s .5s;
+            }
+        }
+    }
+}
+
+.letter-image.open.touch.take.expand.rotate.back {
+    .envelope {
+
+        .paper {
+
+            .paper-back {
+                opacity: 0;
+                transform: rotateY(-180deg);
+                transition: transform 1s ease-in-out, opacity 0s .5s;
+            }
+
+            .paper-front {
+                transform: rotateY(0deg);
+                opacity: 1;
                 transition: transform 1s ease-in-out, opacity 0s .5s;
             }
         }

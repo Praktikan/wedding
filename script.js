@@ -23,14 +23,45 @@ const personalization = {
         who0: 'вам',
         who1: 'вас',
         exact: 'вами, нашими друзьями',
-        who2: 'вас'
+        who2: 'вас',
+        register: 'без гостей',
+        happy: 'Обрадуйте'
     },
     elena: {
-        title: 'Дорогая Елена!',
+        title: 'Дорогие мама Лена и Леонид!',
         who0: 'вам',
         who1: 'вас',
         exact: 'вами, нашими близкими и родными людьми',
-        who2: 'вас'
+        who2: 'вас',
+        register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
+        happy: 'Обрадуйте'
+    },
+    irina: {
+        title: 'Дорогая мама Ира!',
+        who0: 'тебе',
+        who1: 'тебя',
+        exact: 'тобой, нашим близким и родным человеком',
+        who2: 'тебя',
+        register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
+        happy: 'Обрадуй'
+    },
+    alexey: {
+        title: 'Дорогие папа и Надежда!',
+        who0: 'вам',
+        who1: 'вас',
+        exact: 'вами, нашими близкими и родными людьми',
+        who2: 'вас',
+        register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
+        happy: 'Обрадуйте'
+    },
+    misha: {
+        title: 'Дорогие Миша и Рита!',
+        who0: 'вам',
+        who1: 'вас',
+        exact: 'вами, нашими друзьями',
+        who2: 'вас',
+        register: 'без гостей',
+        happy: 'Обрадуйте'
     }
 }
 
@@ -43,6 +74,8 @@ const onLoad = () => {
     document.querySelector('.who1').innerText = personalization[name].who1
     document.querySelector('.exact').innerText = personalization[name].exact
     document.querySelector('.who2').innerText = personalization[name].who2
+    document.querySelector('.register').innerHTML = personalization[name].register
+    document.querySelector('.happy').innerText = personalization[name].happy
     
 }
 /*

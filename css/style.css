@@ -1,10 +1,8 @@
 @font-face {
-    font-family: 'lt-signage';
-    src: url('/wedding/css/lt-signage.woff2') format('woff2'),
-    url('/wedding/css/lt-signage.woff') format('woff'),
-    url('/wedding/css/lt-signage.ttf')  format('truetype');
+    font-family: 'miama';
+    src: url('/wedding/css/miama.otf') format("opentype");
 }
 
 body {
-    font-family: 'lt-signage', sans-serif;
+    font-family: 'miama', sans-serif;
 }
