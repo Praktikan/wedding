@@ -1,8 +1,20 @@
 @font-face {
-    font-family: 'miama';
-    src: url('/wedding/css/miama.otf') format("opentype");
+    font-family: 'newRome';
+    src: url('/wedding/css/NewRomeTrial-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'miss';
+    src: url('/wedding/css/Miss_Katherine_Cyrillic_Script.ttf') format("truetype");
 }
 
 body {
-    font-family: 'miama', sans-serif;
+    font-family: 'newRome', sans-serif;
+    color: #7F6C41;
+    font-size: 6px;
+    font-weight: bold;
+}
+
+strong {
+    text-shadow: 0 0 0 #7F6C41;
 }
