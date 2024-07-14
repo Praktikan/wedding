@@ -122,7 +122,7 @@ const personalization = {
         who2: 'вас',
     },
     artem: {
-        title: 'Дорогой Артём (+1)!',
+        title: 'Дорогие Артём и его спутница!',
         who0: 'вам',
         who1: 'вас',
         register: 'без гостей',
