@@ -21,42 +21,52 @@ const personalization = {
         who0: 'вам',
         who1: 'вас',
         register: 'без гостей',
-        who2: 'вас'
+        who2: 'вас',
+        celebrate: 'Обрадуйте'
     },
     elena: {
         title: 'Дорогие мама Лена и Леонид!',
         who0: 'вам',
         who1: 'вас',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        who2: 'вас'
+        who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     irina: {
         title: 'Дорогая мама Ира!',
         who0: 'тебе',
         who1: 'тебя',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        who2: 'тебя'
+        who2: 'тебя',
+        noChildren: true,
+        celebrate: 'Обрадуй'
     },
     alexey: {
         title: 'Дорогие папа и Надежда!',
         who0: 'вам',
         who1: 'вас',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        who2: 'вас'
+        who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     sveta: {
         title: 'Дорогая Света!',
         who0: 'Вам',
         who1: 'Вас',
         register: 'без гостей',
-        who2: 'Вас'
+        who2: 'Вас',
+        celebrate: 'Обрадуйте'
     },
     sergey: {
         title: 'Дорогой Серёжа!',
         who0: 'тебе',
         who1: 'тебя',
         register: 'без гостей',
-        who2: 'тебя'
+        who2: 'тебя',
+        noChildren: true,
+        celebrate: 'Обрадуй'
     },
     misha: {
         title: 'Дорогие Рита и Миша!',
@@ -64,6 +74,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     tema: {
         title: 'Дорогие Аня и Артём!',
@@ -71,6 +83,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     andrey: {
         title: 'Дорогие Алёна и Андрей!',
@@ -78,6 +92,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     kolya: {
         title: 'Дорогие Люда и Коля!',
@@ -85,6 +101,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     genya: {
         title: 'Дорогие Вика и Женя!',
@@ -92,6 +110,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     sasha: {
         title: 'Дорогие Лена и Саша!',
@@ -99,6 +119,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     tanya: {
         title: 'Дорогие Таня и Лёша!',
@@ -106,6 +128,7 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        celebrate: 'Обрадуйте'
     },
     sashka: {
         title: 'Дорогие Саша и Женя!',
@@ -113,6 +136,7 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        celebrate: 'Обрадуйте'
     },
     victor: {
         title: 'Дорогие Витя и Катя!',
@@ -120,6 +144,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     },
     artem: {
         title: 'Дорогие Артём и его спутница!',
@@ -127,6 +153,8 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
     }
 }
 
@@ -139,6 +167,10 @@ const onLoad = () => {
     document.querySelector('.who1').innerText = personalization[name].who1
     document.querySelector('.register').innerHTML = personalization[name].register
     document.querySelector('.who2').innerText = personalization[name].who2
+    document.querySelector('.celebrate').innerText = personalization[name].celebrate
+    if (personalization[name].noChildren) {
+        document.querySelector('.children').style.display = 'none'
+    }
 }
 /*
 
