@@ -16,5 +16,5 @@ body {
 }
 
 strong {
-    text-shadow: 0 0 0 #7F6C41;
+    text-shadow: 0 0 .5px #7F6C41;
 }

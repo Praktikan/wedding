@@ -1,4 +1,7 @@
+let timer
+
 const onClick = () => {
+    clearTimeout(timer)
     const element = document.querySelector('.letter-image')
     if (!element.classList.contains('open')) {
         element.classList.add('open')
@@ -6,62 +9,124 @@ const onClick = () => {
         element.classList.add('touch')
     } else if (!element.classList.contains('take')) {
         element.classList.add('take')
-    } else if (!element.classList.contains('expand')) {
-        element.classList.add('expand')
-    } else if (!element.classList.contains('rotate')) {
-        element.classList.add('rotate')
-    } else if (!element.classList.contains('back')) {
-        element.classList.add('back')
-    } else if (element.classList.contains('back')) {
-        element.classList.remove('back')
     }
+    //timer = setTimeout(onClick, 15000)
 }
+
+//timer = setTimeout(onClick, 15000)
 
 const personalization = {
     common: {
         title: 'Дорогие друзья!',
         who0: 'вам',
         who1: 'вас',
-        exact: 'вами, нашими друзьями',
-        who2: 'вас',
         register: 'без гостей',
-        happy: 'Обрадуйте'
+        who2: 'вас'
     },
     elena: {
         title: 'Дорогие мама Лена и Леонид!',
         who0: 'вам',
         who1: 'вас',
-        exact: 'вами, нашими близкими и родными людьми',
-        who2: 'вас',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        happy: 'Обрадуйте'
+        who2: 'вас'
     },
     irina: {
         title: 'Дорогая мама Ира!',
         who0: 'тебе',
         who1: 'тебя',
-        exact: 'тобой, нашим близким и родным человеком',
-        who2: 'тебя',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        happy: 'Обрадуй'
+        who2: 'тебя'
     },
     alexey: {
         title: 'Дорогие папа и Надежда!',
         who0: 'вам',
         who1: 'вас',
-        exact: 'вами, нашими близкими и родными людьми',
-        who2: 'вас',
         register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
-        happy: 'Обрадуйте'
+        who2: 'вас'
+    },
+    sveta: {
+        title: 'Дорогая Света!',
+        who0: 'Вам',
+        who1: 'Вас',
+        register: 'без гостей',
+        who2: 'Вас'
+    },
+    sergey: {
+        title: 'Дорогой Серёжа!',
+        who0: 'тебе',
+        who1: 'тебя',
+        register: 'без гостей',
+        who2: 'тебя'
     },
     misha: {
-        title: 'Дорогие Миша и Рита!',
+        title: 'Дорогие Рита и Миша!',
         who0: 'вам',
         who1: 'вас',
-        exact: 'вами, нашими друзьями',
-        who2: 'вас',
         register: 'без гостей',
-        happy: 'Обрадуйте'
+        who2: 'вас',
+    },
+    tema: {
+        title: 'Дорогие Аня и Артём!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    andrey: {
+        title: 'Дорогие Алёна и Андрей!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    kolya: {
+        title: 'Дорогие Люда и Коля!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    genya: {
+        title: 'Дорогие Вика и Женя!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    sasha: {
+        title: 'Дорогие Лена и Саша!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    tanya: {
+        title: 'Дорогие Таня и Лёша!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    sashka: {
+        title: 'Дорогие Саша и Женя!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    victor: {
+        title: 'Дорогие Витя и Катя!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+    },
+    artem: {
+        title: 'Дорогой Артём (+1)!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
     }
 }
 
@@ -69,14 +134,11 @@ const onLoad = () => {
     const params = new URLSearchParams(document.location.search);
     const name = params.get('name') ?? 'common'
     
-    document.querySelector('.title-text').innerText = personalization[name].title
+    document.querySelector('.title').innerText = personalization[name].title
     document.querySelector('.who0').innerText = personalization[name].who0
     document.querySelector('.who1').innerText = personalization[name].who1
-    document.querySelector('.exact').innerText = personalization[name].exact
-    document.querySelector('.who2').innerText = personalization[name].who2
     document.querySelector('.register').innerHTML = personalization[name].register
-    document.querySelector('.happy').innerText = personalization[name].happy
-    
+    document.querySelector('.who2').innerText = personalization[name].who2
 }
 /*
 

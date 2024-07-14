@@ -130,7 +130,8 @@ body {
                                     }
 
                                     &.text-space {
-                                        margin-bottom: 50px;
+                                        margin-top: 10px;
+                                        margin-bottom: 40px;
                                     }
                                 }
                             }
@@ -171,7 +172,8 @@ body {
                                     }
 
                                     &.text-space {
-                                        margin-bottom: 50px;
+                                        margin-top: 10px;
+                                        margin-bottom: 40px;
                                     }
                                 }
                             }
@@ -187,16 +189,18 @@ body {
                     top: 0;
                     width: 210px;
                     height: 297px;
-                    display: flex;
                     background: url("rings.png") 50% 25% / 22% no-repeat, url("2.jpg") 50% 50% / 110% no-repeat, white;
                     box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 
                     .paper-inner {
+                        width: 210px;
+                        height: 297px;
                         display: flex;
 
                         .paper-content {
                             padding: 10px;
                             display: flex;
+                            flex-grow: 1;
                             flex-direction: column;
                             justify-content: center;
 
@@ -233,7 +237,7 @@ body {
                 position: absolute;
                 bottom: 0;
                 flex-direction: column;
-                background: url("3.jpg") 0 0 / 100% no-repeat, white;
+                background: url("3.jpg") 50% 50% / 102% no-repeat, white;
                 justify-content: center;
                 box-shadow: 0 0 0 297px rgba(255, 255, 255, 0.2) inset, 5px 5px 10px rgba(0,0,0,0.4);
                 z-index: 1;
@@ -242,6 +246,7 @@ body {
                 display: flex;
 
                 .paper-inner {
+                    flex-grow: 1;
                     padding: 10px;
 
                     .text {
@@ -355,68 +360,6 @@ body {
             .paper2 {
                 transform: rotateZ(0deg);
                 transition: transform 1s ease-in-out;
-            }
-        }
-    }
-}
-
-.letter-image.open.touch.take.expand {
-    .envelope {
-        .folds {
-            opacity: 0;
-            transition: opacity .5s ease-in-out;
-        }
-
-        .paper {
-            bottom: 100px;
-            transition: bottom .5s ease-in-out;
-
-            .paper-front {
-
-                .second-half {
-                    transform: rotateX(0);
-                    transition: transform 1s ease-in-out .5s;
-                }
-            }
-        }
-    }
-}
-
-.letter-image.open.touch.take.expand.rotate {
-    .envelope {
-
-        .paper {
-
-            .paper-back {
-                opacity: 1;
-                transform: rotateY(0);
-                transition: transform 1s ease-in-out;
-            }
-
-            .paper-front {
-                transform: rotateY(180deg);
-                opacity: 0;
-                transition: transform 1s ease-in-out, opacity 0s .5s;
-            }
-        }
-    }
-}
-
-.letter-image.open.touch.take.expand.rotate.back {
-    .envelope {
-
-        .paper {
-
-            .paper-back {
-                opacity: 0;
-                transform: rotateY(-180deg);
-                transition: transform 1s ease-in-out, opacity 0s .5s;
-            }
-
-            .paper-front {
-                transform: rotateY(0deg);
-                opacity: 1;
-                transition: transform 1s ease-in-out, opacity 0s .5s;
             }
         }
     }
