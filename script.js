@@ -10,10 +10,10 @@ const onClick = () => {
     } else if (!element.classList.contains('take')) {
         element.classList.add('take')
     }
-    //timer = setTimeout(onClick, 15000)
+    timer = setTimeout(onClick, 15000)
 }
 
-//timer = setTimeout(onClick, 15000)
+timer = setTimeout(onClick, 15000)
 
 const personalization = {
     common: {
