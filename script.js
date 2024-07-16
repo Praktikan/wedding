@@ -55,7 +55,7 @@ const personalization = {
         title: 'Дорогая Света!',
         who0: 'Вам',
         who1: 'Вас',
-        register: 'без гостей',
+        register: '<strong>в 15:20</strong>, Королёвское управление ЗАГС',
         who2: 'Вас',
         celebrate: 'Обрадуйте'
     },
