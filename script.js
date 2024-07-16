@@ -155,7 +155,15 @@ const personalization = {
         who2: 'вас',
         noChildren: true,
         celebrate: 'Обрадуйте'
-    }
+    },
+    gubsky: {
+        title: 'Дорогие Женя и Андрей!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+        celebrate: 'Обрадуйте'
+    },
 }
 
 const onLoad = () => {
