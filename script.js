@@ -164,6 +164,14 @@ const personalization = {
         who2: 'вас',
         celebrate: 'Обрадуйте'
     },
+    yacenko: {
+        title: 'Дорогие Оля и Андрей!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+        celebrate: 'Обрадуйте'
+    }
 }
 
 const onLoad = () => {
