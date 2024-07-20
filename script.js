@@ -170,6 +170,7 @@ const personalization = {
         who1: 'вас',
         register: 'без гостей',
         who2: 'вас',
+        noChildren: true,
         celebrate: 'Обрадуйте'
     }
 }
