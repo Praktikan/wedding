@@ -172,6 +172,32 @@ const personalization = {
         who2: 'вас',
         noChildren: true,
         celebrate: 'Обрадуйте'
+    },
+    ivan: {
+        title: 'Дорогие Ваня и его спутница!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+        noChildren: true,
+        celebrate: 'Обрадуйте'
+    },
+    neverov: {
+        title: 'Дорогие Настя и Андрей!',
+        who0: 'вам',
+        who1: 'вас',
+        register: 'без гостей',
+        who2: 'вас',
+        celebrate: 'Обрадуйте'
+    },
+    egor: {
+        title: 'Дорогой Егор!',
+        who0: 'тебе',
+        who1: 'тебя',
+        register: 'без гостей',
+        who2: 'тебя',
+        noChildren: true,
+        celebrate: 'Обрадуй'
     }
 }
 
