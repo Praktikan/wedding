@@ -198,6 +198,15 @@ const personalization = {
         who2: 'тебя',
         noChildren: true,
         celebrate: 'Обрадуй'
+    },
+    edik: {
+        title: 'Дорогой Эдик!',
+        who0: 'тебе',
+        who1: 'тебя',
+        register: 'без гостей',
+        who2: 'тебя',
+        noChildren: true,
+        celebrate: 'Обрадуй'
     }
 }
 
